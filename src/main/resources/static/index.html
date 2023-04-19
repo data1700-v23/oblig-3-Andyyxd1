@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilletter</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+<h1>Bestilling av kinobilletter</h1>
+
+<form id="form">
+    <label for="film">Velg film:</label>
+    <select id="film">
+        <option>Avatar-2</option>
+        <option>Black-Panther-2</option>
+        <option>Superman</option>
+    </select><br>
+    <label for="antall">Antall:</label>
+    <input type="number" id="antall" min="1" value="1" name=""/><br>
+    <label for="fornavn">Fornavn </label>
+    <input type="text" id="fornavn" name="input" value=""/><span id="fornavn-feil"></span><br>
+    <label for="etternavn">Etternavn </label>
+    <input type="text" id="etternavn" name="input" value=""/><span id="etternavn-feil"></span><br>
+    <label for="tlf">Telefonnummer </label>
+    <input type="text" id="tlf" name="input" value=""/><span id="tlf-feil"></span><br>
+    <label for="epost">E-post adresse </label>
+    <input type="text" id="epost" name="input" value=""/><span id="epost-feil"></span><br>
+</form>
+
+
+<button class="btn-primary btn-dark" onclick="kjopBillett()">Kjøp billett</button>
+
+<h1>Alle billetter</h1>
+<div id="alle-billetter"></div>
+<button class="btn-primary btn-dark" onclick="slett();">Slett alle billettene</button>
+
+<script src="/kino.js"></script>
+
+</body>
+
+</html>
