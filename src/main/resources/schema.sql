@@ -1,6 +1,6 @@
 CREATE TABLE Kino
 (
-    telefon BIGINT NOT NULL,
+    telefon VARCHAR(255) NOT NULL,
     film VARCHAR(255) NOT NULL,
     antall int NOT NULL,
     fornavn VARCHAR(255) NOT NULL,

@@ -27,7 +27,7 @@ public class Oblig3Kino1Repository {
     }
 
     public List<Billett> hentAlleBilletter() {
-        String sql = "SELECT * FROM Kino";
+        String sql = "SELECT * FROM Kino ORDER BY Etternavn ASC";
         try {
             List<Billett> alleBilletter = db.query(sql, new BeanPropertyRowMapper(Billett.class));
             return alleBilletter;
