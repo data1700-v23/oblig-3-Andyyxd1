@@ -1,3 +1,5 @@
+$.document.get()
+
 function kjopBillett() {
     let billett = {
         film: $("#film").val(),
@@ -39,7 +41,7 @@ function kjopBillett() {
 }
 
 function hentAlle() {
-    $.get("/hentAlle", function(billett) {
+    $.get("/hentAlleBilletter", function(billett) {
         formaterData(billett);
     })
 }
@@ -56,7 +58,7 @@ function formaterData(Billetter) {
 
 function slett() {
     $("#alle-billetter").html("");
-    $.get("slettAlt", function(){
+    $.get("slettAlleBilletter", function(){
         hentAlle();
     });
 
