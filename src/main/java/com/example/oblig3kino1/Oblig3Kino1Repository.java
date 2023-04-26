@@ -37,11 +37,6 @@ public class Oblig3Kino1Repository {
         }
     }
 
-    public void slettEnBillett(String etternavn) {
-        String sql = "DELETE FROM Kino WHERE Etternavn=?";
-        db.update(sql, etternavn);
-    }
-
     public void slettBilletter() {
         String sql = "DELETE FROM Kino";
         db.update(sql);
