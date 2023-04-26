@@ -25,4 +25,9 @@ public class Oblig3Kino1Controller {
     public void slettAlle() {
         rep.slettBilletter();
     }
+
+    @GetMapping("/slettEnBillett")
+    public void slettEnBillett(String etternavn) {
+        rep.slettEnBillett(etternavn);
+    }
 }
