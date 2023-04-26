@@ -1,5 +1,3 @@
-$.document.get()
-
 function kjopBillett() {
     let billett = {
         film: $("#film").val(),
